@@ -8,7 +8,7 @@ namespace Assignment1_Spring2020
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("github photo link");
+            Console.WriteLine("github photo link: https://github.com/divyangmehta96/Assignment-One/blob/master/Assignment-One/Assignment%2001.PNG");
             int n = 5;
             Console.WriteLine("Question 1\n");
             PrintPattern(n);

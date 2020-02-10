@@ -8,6 +8,7 @@ namespace Assignment1_Spring2020
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Example Solution - https://github.com/divyangmehta96/Assignment-One/blob/master/Assignment-One/Assignment%2001.PNG \n");
             int n = 5;
             Console.WriteLine("Question 1\n");
             PrintPattern(n);

@@ -31,7 +31,7 @@ namespace Assignment1_Spring2020
             Console.WriteLine("\nQuestion 5\n");
             PalindromePairs(words);
 
-            int num = 4;
+            int num = 7;
             Console.WriteLine("\nQuestion 6\n");
             Stones(num);
             Console.WriteLine();
@@ -200,13 +200,15 @@ namespace Assignment1_Spring2020
                     List<int> integers = new List<int>();   // initialize a new list
                     {
                         int s = 0;                          // initialize int variable s
-                        Random choice = new Random();
+                        Random choice = new Random();       // initialize random variable choice
+                        int c = choice.Next(1, 4);          // players 2 selects randomly 1 or 2 or 3
+                        Console.WriteLine("Player 2 picks " + c); // display player 2 choice
                         int player1 = num % 4;              // number of stones picked up by player 1
                         integers.Add(player1);              // add all the player 1 values into the list
                         int player2 = num - player1;        // remaining values are assigned to player 2
                         for (int x = 1; x <= player2; x++)  // to display the remaining stones
                         {
-                            integers.Add(choice.Next(1,4));                // add 1 or 2 or 3 into list until player 2 value
+                            integers.Add(c);                // add 1 or 2 or 3 into list until player 2 value
                         }
                         foreach (int element in integers)   // traverse through each element in the list
                         {
